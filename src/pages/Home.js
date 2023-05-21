@@ -17,11 +17,11 @@ const Home = () => {
     <Hero />
     <section className='py-10'>
       <div className='container mx-auto'>
-      <div class="flex flex-col justify-center items-center ">
-      <h1 class="text-5xl xl:text-5xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white mb-10">
-  Our Top <span class="text-custom hover:brightness-50 dark:text-purple-500 animate-pulse"> Collection </span>
-</h1>
-      </div>
+      <div class="flex flex-col justify-center items-center">
+  <h1 class="text-3xl md:text-4xl xl:text-5xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white mb-10">
+    Our Top <span class="text-custom hover:brightness-50 dark:text-purple-500 animate-pulse"> Collection </span>
+  </h1>
+</div>
 
         <div className='relative flex-grow mb-4'>
                 <label htmlFor='search-input' className='sr-only'>
