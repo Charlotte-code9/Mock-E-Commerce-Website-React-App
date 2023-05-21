@@ -9,6 +9,7 @@ import Slide3 from '../img/slide3.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import AdjustIcon from '@mui/icons-material/Adjust';
 
 const Hero = () => {
   const slides = [
@@ -49,7 +50,7 @@ const Hero = () => {
   };
 
   return (
-  <section className='h-[620px] bg-gradient-to-l from-[#C6A78E] to-[#8d5e43] bg-no-repeat bg-cover bg-center'>
+  <section className='h-[620px] bg-gradient-to-l from-[#8d5e43] to-[#C6A78E] bg-no-repeat bg-cover bg-center'>
      <div className='max-w-[1400px] h-[610px] w-full py-16 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -68,9 +69,8 @@ const Hero = () => {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className='text-xs cursor-pointer'
           >
-            <FiberManualRecordIcon />
+            <FiberManualRecordIcon fontSize='small' className='cursor-pointer' />
           </div>
         ))}
       </div>

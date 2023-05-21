@@ -1,11 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { SidebarContext } from '../contexts/SidebarContext';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import { CartContext } from '../contexts/CartContext';
-import Logo from '../img/bg-1.png';
-import LogoWrd from '../img/light-removebg-preview.png';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import LogoWrd from '../img/bg-icon-removebg-preview.png';
+import ShoppingCartIcon from '../img/cartlogo.png';
 
 const Header = () => {
   const {isOpen, setIsOpen} = useContext(SidebarContext)
@@ -25,21 +23,14 @@ const Header = () => {
     <div className='container mx-auto flex items-center justify-between h-full'>
     <Link to={'/'}>
       <div>
-        <img src={Logo} className='w-[60px]'></img>
+        <img src={LogoWrd} className='w-[60px]'></img>
       </div>
     </Link>
-
-    <Link to={'/'}>
-      <div>
-        <img src={LogoWrd} className='h-[70px]'></img>
-      </div>
-    </Link>
-    
     
     <div 
     onClick={()=> setIsOpen(!isOpen)} className='cursor-pointer flex relative'>
-      <ShoppingCartIcon className='text-3xl h-[30px]'/>
-      <div className='bg-red-500 absolute -right-2 bottom-3 text-[12px] 
+      <img src={ShoppingCartIcon} className='w-[60px]'></img>
+      <div className='bg-red-500 absolute right-1 bottom-9 text-[12px] 
       w-[18px] h-[18px] text-white rounded-full flex justify-center items-center'>
         {itemAmount}
       </div>
