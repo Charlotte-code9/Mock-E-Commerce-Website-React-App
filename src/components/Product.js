@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { CartContext } from '../contexts/CartContext';
+import PageviewIcon from '@mui/icons-material/Pageview';
+import AddtoCart from '../img/addtocart.png';
 
 const Product = ({product}) => {
   const { addToCart } = useContext(CartContext)
@@ -19,16 +19,15 @@ const Product = ({product}) => {
             </div>
         </div>
 
-        <div className='absolute top-6 -right-11 group-hover:right-5 p-2 flex flex-col items-center 
+        <div className='absolute top-5 -right-11 group-hover:right-5 p-2 flex flex-col items-center 
         justify-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300 '>
             <button onClick={() => addToCart(product,id)}>
-                <div className='flex justify-center items-center text-white w-12 h-12 bg-red-400'>
-                    <AddIcon className='text-3xl'/>
+                <div className='flex justify-center items-center text-white w-11 h-11 bg-[#8d5e43] rounded-full'>
+                    <img src={AddtoCart} alt='Add to cart'/>
                 </div>
             </button>
-            <Link to={`/product/${id}`} className='w-12 h-12 bg-white flex justify-center items-center 
-            text-primary drop-shadow-xl'>
-                <RemoveRedEyeIcon/>
+            <Link to={`/product/${id}`} className='flex justify-center items-center  text-white w-11 h-11 bg-[#8d5e43]  rounded-full'>
+                <PageviewIcon fontSize='large'/>
             </Link>
         </div>
 
