@@ -1,7 +1,4 @@
-
-import React, { useState } from 'react';
-
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
 import Slide1 from '../img/slide1.png';
 import Slide2 from '../img/slide2.png';
 import Slide3 from '../img/slide3.png';
@@ -9,7 +6,7 @@ import Slide3 from '../img/slide3.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import AdjustIcon from '@mui/icons-material/Adjust';
+
 
 const Hero = () => {
   const slides = [
