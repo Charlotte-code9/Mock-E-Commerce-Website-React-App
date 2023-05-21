@@ -10,8 +10,12 @@ const ProductProvider = ({ children }) => {
     const fetchProducts = async () => {
       const response = await fetch('https://fakestoreapi.com/products');
       const data = await response.json();
-      setProducts(data);
-      setFilteredProducts(data);
+      const filtered = data.filter(
+        (product) =>
+        product.category === "men's clothing" || product.category === "women's clothing" || product.category === "jewelery" 
+      );
+      setProducts(filtered);
+      setFilteredProducts(filtered);
     };
     fetchProducts();
   }, []);

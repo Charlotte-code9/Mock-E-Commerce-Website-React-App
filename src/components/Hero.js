@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import Slide1 from '../img/slide1.png';
+import Slide2 from '../img/slide2.png';
+import Slide3 from '../img/slide3.png';
 
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -14,17 +16,17 @@ const Hero = () => {
       url: Slide1,
     },
     {
-      url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+      url: 'https://cdn.pixabay.com/photo/2019/02/10/16/38/clothing-3987617_960_720.jpg',
     },
     {
-      url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
+      url: Slide3,
     },
 
     {
-      url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
+      url: 'https://cdn.pixabay.com/photo/2019/02/10/15/09/clothes-3987460_960_720.jpg',
     },
     {
-      url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
+      url: Slide2,
     },
   ];
 
@@ -47,7 +49,7 @@ const Hero = () => {
   };
 
   return (
-  <section className='h-[620px] bg-gradient-to-l from-[#C6A78E] to-amber-400 bg-no-repeat bg-cover bg-center'>
+  <section className='h-[620px] bg-gradient-to-l from-[#C6A78E] to-[#8d5e43] bg-no-repeat bg-cover bg-center'>
      <div className='max-w-[1400px] h-[610px] w-full py-16 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

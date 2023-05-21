@@ -11,7 +11,7 @@ const Product = ({product}) => {
   return( 
   <div>
     <div className='border border-[#e4e4e4] h-[300px] mb-4 relative 
-    overflow-hidden group transition rounded-2xl'>
+    overflow-hidden group transition rounded-2xl bg-white drop-shadow-md'>
         
         <div className='w-full h-full flex justify-center items-center '>
             <div className='w-[200px] mx-auto flex justify-center items-center'>
@@ -43,6 +43,8 @@ const Product = ({product}) => {
     </div>
     
   </div>
+
+  
   );
 };
 

@@ -4,6 +4,7 @@ import { SidebarContext } from '../contexts/SidebarContext';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import { CartContext } from '../contexts/CartContext';
 import Logo from '../img/bg-1.png';
+import LogoWrd from '../img/light-removebg-preview.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header = () => {
@@ -27,6 +28,13 @@ const Header = () => {
         <img src={Logo} className='w-[60px]'></img>
       </div>
     </Link>
+
+    <Link to={'/'}>
+      <div>
+        <img src={LogoWrd} className='h-[70px]'></img>
+      </div>
+    </Link>
+    
     
     <div 
     onClick={()=> setIsOpen(!isOpen)} className='cursor-pointer flex relative'>
