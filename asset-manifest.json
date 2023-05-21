@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pretty-gal-botique-ecommerce/static/css/main.3bb52598.css",
-    "main.js": "/pretty-gal-botique-ecommerce/static/js/main.0247bf04.js",
-    "static/media/slide3.png": "/pretty-gal-botique-ecommerce/static/media/slide3.821a6baeb13558283fac.png",
-    "static/media/slide1.png": "/pretty-gal-botique-ecommerce/static/media/slide1.06b594292c8718f6fa21.png",
-    "static/media/slide2.png": "/pretty-gal-botique-ecommerce/static/media/slide2.a3286ea27c39246a25df.png",
-    "static/media/bg-icon-removebg-preview.png": "/pretty-gal-botique-ecommerce/static/media/bg-icon-removebg-preview.c1ba13a298303d58907a.png",
-    "static/media/addtocart.png": "/pretty-gal-botique-ecommerce/static/media/addtocart.4ee6dffa0f38cd72d506.png",
-    "static/media/cartlogo.png": "/pretty-gal-botique-ecommerce/static/media/cartlogo.c4bc001e5edb70c0adc2.png",
-    "index.html": "/pretty-gal-botique-ecommerce/index.html",
-    "main.3bb52598.css.map": "/pretty-gal-botique-ecommerce/static/css/main.3bb52598.css.map",
-    "main.0247bf04.js.map": "/pretty-gal-botique-ecommerce/static/js/main.0247bf04.js.map"
+    "main.css": "/pretty-gal-botique/static/css/main.3bb52598.css",
+    "main.js": "/pretty-gal-botique/static/js/main.5b440d34.js",
+    "static/media/slide3.png": "/pretty-gal-botique/static/media/slide3.821a6baeb13558283fac.png",
+    "static/media/slide1.png": "/pretty-gal-botique/static/media/slide1.06b594292c8718f6fa21.png",
+    "static/media/slide2.png": "/pretty-gal-botique/static/media/slide2.a3286ea27c39246a25df.png",
+    "static/media/bg-icon-removebg-preview.png": "/pretty-gal-botique/static/media/bg-icon-removebg-preview.c1ba13a298303d58907a.png",
+    "static/media/addtocart.png": "/pretty-gal-botique/static/media/addtocart.4ee6dffa0f38cd72d506.png",
+    "static/media/cartlogo.png": "/pretty-gal-botique/static/media/cartlogo.c4bc001e5edb70c0adc2.png",
+    "index.html": "/pretty-gal-botique/index.html",
+    "main.3bb52598.css.map": "/pretty-gal-botique/static/css/main.3bb52598.css.map",
+    "main.5b440d34.js.map": "/pretty-gal-botique/static/js/main.5b440d34.js.map"
   },
   "entrypoints": [
     "static/css/main.3bb52598.css",
-    "static/js/main.0247bf04.js"
+    "static/js/main.5b440d34.js"
   ]
 }
