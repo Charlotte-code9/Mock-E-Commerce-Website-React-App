@@ -15,7 +15,9 @@ const Product = ({product}) => {
         
         <div className='w-full h-full flex justify-center items-center '>
             <div className='w-[200px] mx-auto flex justify-center items-center'>
+            <Link  to={`/product/${id}`}>
                 <img className='max-h-[160px] group-hover:scale-110 transition duration-300' src={image} alt=''/>
+            </Link>
             </div>
         </div>
 
@@ -36,7 +38,7 @@ const Product = ({product}) => {
     <div>
         <div className='text-sm capitalize mb-1'>{category}</div>
         <Link to={`/product/${id}`}>
-            <h2 className='font-semibold mb-1'>{title}</h2>
+            <h2 className='font-semibold mb-1 hover:text-custom'>{title}</h2>
         </Link>
         <div className='font-semibold'>$ {price}</div>
     </div>
