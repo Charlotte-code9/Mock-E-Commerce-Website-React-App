@@ -8,7 +8,6 @@ const Home = () => {
 
   const { filteredProducts, handleSearchInputChange } = useContext(ProductContext);
 
-  // Function to handle search input change
   const onSearchInputChange = (e) => {
     handleSearchInputChange(e.target.value);
   };

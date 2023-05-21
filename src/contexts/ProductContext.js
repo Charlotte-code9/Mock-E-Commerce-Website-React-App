@@ -20,7 +20,7 @@ const ProductProvider = ({ children }) => {
     fetchProducts();
   }, []);
 
-  // Function to handle search input change
+
   const handleSearchInputChange = (searchQuery) => {
     const filtered = products.filter((product) =>
       product.title.toLowerCase().includes(searchQuery.toLowerCase())

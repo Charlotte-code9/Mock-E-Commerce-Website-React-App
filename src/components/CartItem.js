@@ -26,23 +26,22 @@ const CartItem = ({item}) => {
             </div>
           </div>
           <div className='flex gap-x-2 h-[36px] text-sm'>
-            {/* qty */}
+           
             <div className='flex flex-1 max-w-[100px] items-center h-full border text-primary font-medium'>
-              {/* minus icon */}
+            
               <div onClick={()=> decreaseAmount(id)} className='flex-1 h-full flex justify-center items-center cursor-pointer'>
                 <RemoveIcon />
               </div>
-              {/* amount */}
+            
               <div className='h-full flex justify-center items-center px-2'>{amount}</div>
-              {/* plus icon */}
+           
               <div onClick={()=> increaseAmount(id)} className='flex-1 h-full flex justify-center items-center cursor-pointer'>
                 <AddIcon />
               </div>
             </div>
-            {/* item price */}
+           
             <div className='flex-1 flex items-center'>${price}</div>
-            {/* final price*/}
-            {/* make the price at 2 decimals */}
+          
             <div className='flex-1 flex justify-end items-center text-primary font-medium'>{`$ ${parseFloat(item.price * amount).toFixed(2)}`}</div>
           </div>
       </div>

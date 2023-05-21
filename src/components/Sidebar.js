@@ -17,7 +17,7 @@ const Sidebar = () => {
         <div className='uppercase text-sm font-semibold'>
           Shopping Cart ({itemAmount})
         </div>
-        {/** icon */}
+   
         <div onClick={handleClose} className='cursor-pointer w-8 h-8 flex justify-center items-center'>
           <ArrowForwardIcon className='text-2xl' />
         </div>
@@ -29,11 +29,11 @@ const Sidebar = () => {
       </div>
       <div className='flex flex-col gap-y-3 py-2 mt-4'>
         <div className='flex w-full justify-between items-center'>
-          {/** total  */}
+        
           <div className='uppercase font-semibold'>
             <span className='mr-2'> Total: </span> $ {parseFloat(total).toFixed(2)}
           </div>
-          {/** clear cart icon */}
+          
           <div onClick={clearCart} className='cursor-pointer py-2 bg-red-500 text-white w-12 h-12 flex justify-center items-center text-xl'>
             <DeleteIcon />
           </div>
